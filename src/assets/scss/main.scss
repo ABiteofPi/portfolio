@@ -4,3 +4,13 @@
 @import 'bootstrap/scss/mixins';
 @import 'bootstrap/scss/utilities';
 @import 'bootstrap/scss/utilities/api';
+
+@import './styles/type';
+@import './styles/color';
+
+body {
+  background-color: #090909;
+  font-family: 'Agdasima', sans-serif;
+  font-style: normal;
+  color: #ffffff;
+}
