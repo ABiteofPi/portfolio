@@ -6,7 +6,7 @@ import Logo from "@/assets/images/logo.svg";
   <div class="px-5 py-4 z-2">
     <div class="d-flex flex-row justify-content-between align-items-center">
       <div>
-        <img :src="Logo" alt="Logo" />
+        <img :src="Logo" alt="Logo" class="logo" />
       </div>
       <div class="d-flex flex-row gap-4">
         <span class="navbar-link">About</span>
@@ -21,5 +21,11 @@ import Logo from "@/assets/images/logo.svg";
 <style lang="scss" scoped>
 .navbar-link {
   font-size: 20px;
+}
+
+.logo {
+  @media (max-width: 580px) {
+    width: 35px;
+  }
 }
 </style>

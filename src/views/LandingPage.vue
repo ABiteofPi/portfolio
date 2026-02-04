@@ -23,7 +23,7 @@
     background: -webkit-linear-gradient(#fff, #ccc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 100px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 100px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.15);
   }
 
   @media (max-width: 1080px) {
