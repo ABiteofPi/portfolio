@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import GraphicCard from './components/GraphicCard.vue';
+import UiUxCard from './components/UiUxCard.vue';
+
 
 </script>
 
@@ -7,6 +10,18 @@
     <div class="w-100 d-flex flex-column align-items-center title-container">
       <h1 class="font-funnel-display font-w-bold title">a bite of pi</h1>
       <h1>Design by <span class="color-yellow">Paya K.</span></h1>
+    </div>
+  </div>
+  <div>
+
+  </div>
+  <div class="d-flex flex-column px-5 explore-container">
+    <div class="w-100 d-flex flex-column align-items-center gap-4">
+      <h3 class="explore-title">Explore My Work</h3>
+      <div class="d-flex flex-row flex-wrap gap-4 justify-content-center">
+        <UiUxCard />
+        <GraphicCard />
+      </div>
     </div>
   </div>
 
@@ -43,7 +58,13 @@
   }
 }
 
+.explore-container {
+  margin-top: 100px;
+}
 
+.explore-title {
+  color: #999;
+}
 
 .color-yellow {
   color: $yellow-500 !important;
