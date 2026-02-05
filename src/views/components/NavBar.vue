@@ -5,9 +5,9 @@ import Logo from "@/assets/images/logo.svg";
 <template>
   <div class="px-5 py-4 z-2">
     <div class="d-flex flex-row justify-content-between align-items-center">
-      <div>
+      <a href="/">
         <img :src="Logo" alt="Logo" class="logo" />
-      </div>
+      </a>
       <div class="d-flex flex-row gap-4">
         <span class="navbar-link">About</span>
         <span class="navbar-link">Works</span>
@@ -24,6 +24,12 @@ import Logo from "@/assets/images/logo.svg";
 }
 
 .logo {
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  }
+
   @media (max-width: 580px) {
     width: 35px;
   }
