@@ -26,10 +26,6 @@ import Logo from "@/assets/images/logo.svg";
 .logo {
   transition: all 0.3s ease;
 
-  &:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
-  }
-
   @media (max-width: 580px) {
     width: 35px;
   }

@@ -13,10 +13,6 @@ import NavBar from './components/NavBar.vue';
 
 <style scoped lang="scss">
 .page {
-  background-image: url('../assets/images/landing-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
 }
 </style>
