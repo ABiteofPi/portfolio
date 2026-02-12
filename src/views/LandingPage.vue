@@ -13,7 +13,7 @@
     </div>
 
     <div>
-      <Button class="cta-btn">View Selected Work</Button>
+      <Button class="cta-btn">View Selected Work <i-mdi-chevron-right /></Button>
     </div>
   </div>
 
@@ -33,5 +33,15 @@
   padding: 15px 25px;
   border-radius: 5px;
   border-style: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #333;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #000;
+  }
 }
 </style>
