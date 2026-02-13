@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <div class="d-flex flex-column px-5 py-5 gap-5 mt-5">
+  <div class="d-flex flex-column px-5 py-5 gap-5 title-container">
     <div>
       <h1>Design by Paya K.</h1>
       <h1 class="title font-w-bold text-muted">Visual Storytelling.</h1>
@@ -21,6 +21,14 @@
 
 <style scoped lang="scss">
 @import '../assets/scss/main.scss';
+
+.title-container {
+  margin-top: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
 
 .title {
   font-size: calc(1rem + 4vw);
