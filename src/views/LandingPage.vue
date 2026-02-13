@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import AboutMe from './components/AboutMe.vue';
+import SelectedWork from './components/SelectedWork.vue';
 
 
 </script>
@@ -17,16 +19,21 @@
     </div>
   </div>
 
+  <AboutMe />
+  <SelectedWork />
+
 </template>
 
 <style scoped lang="scss">
-@import '../assets/scss/main.scss';
+@import '@/assets/scss/main.scss';
 
 .title-container {
+  height: calc(100vh - 200px);
   margin-top: 100px;
 
   @media screen and (max-width: 768px) {
     margin-top: 0;
+    height: auto;
   }
 }
 
