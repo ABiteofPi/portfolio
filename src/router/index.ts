@@ -1,4 +1,4 @@
-import LandingPage from '@/views/LandingPage.vue'
+import LandingPage from '@/views/landingPage/LandingPage.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({

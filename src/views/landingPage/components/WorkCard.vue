@@ -35,10 +35,16 @@ const props = defineProps<{
 @import '@/assets/scss/main.scss';
 
 .work-card {
+  cursor: pointer;
   background-color: #e3e3e3;
   border-radius: 20px;
   border: 1px solid rgba(#151515, 0.1);
+  transition: all 0.2s ease;
 
+  &:hover {
+    transform: scale3d(1.02, 1.02, 1);
+    box-shadow: 0 4px 20px rgba(#151515, 0.1);
+  }
 
   p {
     font-size: 20px;

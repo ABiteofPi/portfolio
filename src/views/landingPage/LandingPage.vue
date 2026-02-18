@@ -1,6 +1,6 @@
 <script lang="ts" setup>
+import PageFooter from '../components/PageFooter.vue';
 import AboutMe from './components/AboutMe.vue';
-import PageFooter from './components/PageFooter.vue';
 import SelectedWork from './components/SelectedWork.vue';
 
 
