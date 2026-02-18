@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import AboutMe from './components/AboutMe.vue';
+import PageFooter from './components/PageFooter.vue';
 import SelectedWork from './components/SelectedWork.vue';
 
 
@@ -21,6 +22,7 @@ import SelectedWork from './components/SelectedWork.vue';
 
   <AboutMe />
   <SelectedWork />
+  <PageFooter />
 
 </template>
 
