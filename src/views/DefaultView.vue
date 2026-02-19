@@ -51,5 +51,6 @@ onUnmounted(() => {
   position: sticky;
   background-color: rgba(#dadada, 0.5);
   backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(#151515, 0.1);
 }
 </style>
