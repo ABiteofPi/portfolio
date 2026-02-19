@@ -3,14 +3,20 @@ import Logo from "@/assets/images/logo.svg";
 </script>
 
 <template>
-  <div class="px-5 py-4 z-2">
-    <div class="d-flex flex-row justify-content-between align-items-center">
+  <div class="px-5 py-4">
+    <div class="d-flex flex-row justify-content-between align-items-center w-100">
       <a href="/">
         <img :src="Logo" alt="Logo" class="logo" />
       </a>
       <div class="d-flex flex-row gap-4">
-        <span class="navbar-link">About</span>
-        <span class="navbar-link">Works</span>
+        <RouterLink :to="{ path: '/', hash: '#about' }">
+          <span class="navbar-link">About</span>
+        </RouterLink>
+
+        <RouterLink :to="{ path: '/', hash: '#selected-work' }">
+          <span class="navbar-link">Works</span>
+        </RouterLink>
+
         <span class="navbar-link">Contact</span>
       </div>
     </div>
@@ -29,5 +35,10 @@ import Logo from "@/assets/images/logo.svg";
   @media (max-width: 580px) {
     width: 35px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

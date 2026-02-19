@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import PageFooter from '../components/PageFooter.vue';
 import AboutMe from './components/AboutMe.vue';
 import SelectedWork from './components/SelectedWork.vue';
 
@@ -20,9 +19,13 @@ import SelectedWork from './components/SelectedWork.vue';
     </div>
   </div>
 
-  <AboutMe />
-  <SelectedWork />
-  <PageFooter />
+  <section id="about">
+    <AboutMe />
+  </section>
+
+  <section id="selected-work">
+    <SelectedWork />
+  </section>
 
 </template>
 
@@ -59,6 +62,14 @@ import SelectedWork from './components/SelectedWork.vue';
 
   &:active {
     background-color: #000;
+  }
+}
+
+#about {
+  scroll-margin-top: 93px;
+
+  @media (max-width: 580px) {
+    scroll-margin-top: 83px;
   }
 }
 </style>

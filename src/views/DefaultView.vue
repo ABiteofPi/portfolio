@@ -1,12 +1,33 @@
 <script lang="ts" setup>
+import { onMounted, onUnmounted, ref } from "vue";
 import NavBar from './components/NavBar.vue';
+import PageFooter from './components/PageFooter.vue';
+
+const scrolled = ref(false);
+
+const onScroll = () => {
+  scrolled.value = window.scrollY > 0;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", onScroll);
+});
 
 </script>
 
 <template>
   <div class="page">
-    <NavBar />
-    <RouterView />
+    <NavBar :class="[{ 'navbar-scrolled': scrolled }, 'navbar']" />
+    <div>
+      <RouterView />
+      <PageFooter />
+    </div>
+
   </div>
 
 </template>
@@ -15,8 +36,20 @@ import NavBar from './components/NavBar.vue';
 .page {
   background-image: url(../assets/images/bg.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 100vh;
   background-position: top right;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-scrolled {
+  position: sticky;
+  background-color: rgba(#dadada, 0.5);
+  backdrop-filter: blur(10px);
 }
 </style>
