@@ -68,8 +68,15 @@ const KQH = {
 }
 
 .work-cards-grid>* {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
+}
+
+.work-cards-grid>*> :first-child {
+  flex-grow: 1;
+  width: 100%;
 }
 
 a {
