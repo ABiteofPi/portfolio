@@ -4,6 +4,13 @@
   font-style: normal;
 }
 
+.ibm-plex-sans {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
 .font-w-normal {
   font-weight: 400 !important;
 }
@@ -22,4 +29,8 @@
 
 .text-muted {
   color: #9a9a9a !important;
+}
+
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
 }

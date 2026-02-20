@@ -12,5 +12,6 @@
 
 .footer {
   border-top: 1px solid rgba(#151515, 0.1);
+  background-color: #dadada;
 }
 </style>

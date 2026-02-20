@@ -21,12 +21,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="page">
+  <div class="d-flex flex-column page">
     <NavBar :class="[{ 'navbar-scrolled': scrolled }, 'navbar']" />
-    <div>
+    <div class="d-flex flex-column align-content-between flex-grow-1">
       <RouterView />
-      <PageFooter />
     </div>
+    <PageFooter class="" />
 
   </div>
 

@@ -32,8 +32,12 @@ const KQH = {
     <div class="work-cards-grid">
       <WorkCard :title="KQH.title" :description="KQH.description" category="UI/UX" category-color="#9CC3D7"
         :thumbnail-url="KQHThumb" badge-text-color="#004162" />
-      <WorkCard :title="dataVis.title" :description="dataVis.description" category="UI/UX" category-color="#9CC3D7"
-        :thumbnail-url="dataVisThumb" badge-text-color="#004162" />
+
+      <RouterLink to="/works/data-visualization-case-study">
+        <WorkCard :title="dataVis.title" :description="dataVis.description" category="UI/UX" category-color="#9CC3D7"
+          :thumbnail-url="dataVisThumb" badge-text-color="#004162" />
+      </RouterLink>
+
       <WorkCard :title="qaab.title" :description="qaab.description" category="Branding" category-color="#9CD79C"
         :thumbnail-url="qaabThumb" badge-text-color="#006229" />
     </div>
@@ -66,5 +70,10 @@ const KQH = {
 .work-cards-grid>* {
   width: 100%;
   height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

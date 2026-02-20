@@ -1,4 +1,5 @@
 import LandingPage from '@/views/landingPage/LandingPage.vue'
+import DataVisualizationProj from '@/views/works/dataVisualization/DataVisualizationProj.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -7,6 +8,10 @@ const router = createRouter({
     {
       path: '/',
       component: LandingPage,
+    },
+    {
+      path: '/works/data-visualization-case-study',
+      component: DataVisualizationProj,
     },
   ],
 
