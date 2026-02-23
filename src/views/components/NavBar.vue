@@ -5,9 +5,9 @@ import Logo from "@/assets/images/logo.svg";
 <template>
   <div class="navbar-container">
     <div class="d-flex flex-row justify-content-between align-items-center w-100">
-      <a href="/">
+      <RouterLink to="/">
         <img :src="Logo" alt="Logo" class="logo" />
-      </a>
+      </RouterLink>
       <div class="d-flex flex-row gap-4">
         <RouterLink :to="{ path: '/', hash: '#about' }">
           <span class="navbar-link">About</span>
