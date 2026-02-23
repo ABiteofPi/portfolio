@@ -1,5 +1,17 @@
 <script lang="ts" setup>
 import Logo from "@/assets/images/logo.svg";
+import { ref } from 'vue';
+import ContactModal from './ContactModal.vue';
+
+const isContactModalOpen = ref(false)
+
+const openContactModal = () => {
+  isContactModalOpen.value = true
+}
+
+const closeContactModal = () => {
+  isContactModalOpen.value = false
+}
 </script>
 
 <template>
@@ -17,10 +29,12 @@ import Logo from "@/assets/images/logo.svg";
           <span class="navbar-link">Works</span>
         </RouterLink>
 
-        <!-- <span class="navbar-link">Contact</span> -->
+        <span class="navbar-link cursor-pointer" @click="openContactModal">Contact</span>
       </div>
     </div>
+    <ContactModal :isOpen="isContactModalOpen" @close="closeContactModal" />
   </div>
+
 
 </template>
 
@@ -35,6 +49,15 @@ import Logo from "@/assets/images/logo.svg";
 
 .navbar-link {
   font-size: 20px;
+  transition: color 0.2s ease;
+
+  &.cursor-pointer {
+    cursor: pointer;
+
+    &:hover {
+      color: #4d4d4d;
+    }
+  }
 }
 
 .logo {
