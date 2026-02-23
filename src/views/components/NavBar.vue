@@ -5,7 +5,7 @@ import Logo from "@/assets/images/logo.svg";
 <template>
   <div class="navbar-container">
     <div class="d-flex flex-row justify-content-between align-items-center w-100">
-      <RouterLink to="/">
+      <RouterLink :to="{ path: '/' }">
         <img :src="Logo" alt="Logo" class="logo" />
       </RouterLink>
       <div class="d-flex flex-row gap-4">
