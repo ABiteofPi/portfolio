@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
-defineProps<{
+const props = defineProps<{
   isOpen: boolean
 }>()
 
@@ -23,6 +23,14 @@ const copyEmail = () => {
 const closeModal = () => {
   emit('close')
 }
+
+watch(() => props.isOpen, (newVal) => {
+  if (newVal) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = 'auto'
+  }
+}, { immediate: true })
 </script>
 
 <template>
