@@ -17,7 +17,7 @@ import Logo from "@/assets/images/logo.svg";
           <span class="navbar-link">Works</span>
         </RouterLink>
 
-        <span class="navbar-link">Contact</span>
+        <!-- <span class="navbar-link">Contact</span> -->
       </div>
     </div>
   </div>
