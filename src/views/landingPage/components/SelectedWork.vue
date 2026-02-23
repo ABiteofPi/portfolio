@@ -1,20 +1,19 @@
 <script lang="ts" setup>
 import dataVisThumb from '@/assets/images/thumbnails/Data visualization-thumb.jpg';
 import KQHThumb from '@/assets/images/thumbnails/KQH-thumb.jpg';
-import qaabThumb from '@/assets/images/thumbnails/Qaab-thumb.jpg';
 import WorkCard from './WorkCard.vue';
 
 
 
 const dataVis = {
-  title: 'Data visualization case study',
-  description: 'A UX study on displaying data from a raw data-dense sample chart.'
+  title: 'Chart data visualization case study',
+  description: 'A UX study on best practices in displaying data from a data-dense bar chart.'
 }
 
-const qaab = {
-  title: 'Qaab',
-  description: 'Branding for a Persian blockchain-based online marketplace.'
-}
+// const qaab = {
+//   title: 'Qaab',
+//   description: 'Branding for a Persian blockchain-based online marketplace.'
+// }
 
 const KQH = {
   title: 'Kipu Quantum Hub',
@@ -30,16 +29,18 @@ const KQH = {
     </div>
 
     <div class="work-cards-grid">
-      <WorkCard :title="KQH.title" :description="KQH.description" category="UI/UX" category-color="#9CC3D7"
-        :thumbnail-url="KQHThumb" badge-text-color="#004162" />
+      <RouterLink to="/works/Kipu-Quantum-Hub">
+        <WorkCard :title="KQH.title" :description="KQH.description" category="UI/UX" category-color="#9CC3D7"
+          :thumbnail-url="KQHThumb" badge-text-color="#004162" />
+      </RouterLink>
 
       <RouterLink to="/works/data-visualization-case-study">
         <WorkCard :title="dataVis.title" :description="dataVis.description" category="UI/UX" category-color="#9CC3D7"
           :thumbnail-url="dataVisThumb" badge-text-color="#004162" />
       </RouterLink>
 
-      <WorkCard :title="qaab.title" :description="qaab.description" category="Branding" category-color="#9CD79C"
-        :thumbnail-url="qaabThumb" badge-text-color="#006229" />
+      <!-- <WorkCard :title="qaab.title" :description="qaab.description" category="Branding" category-color="#9CD79C"
+        :thumbnail-url="qaabThumb" badge-text-color="#006229" /> -->
     </div>
   </div>
 

@@ -1,5 +1,6 @@
 import LandingPage from '@/views/landingPage/LandingPage.vue'
 import DataVisualizationProj from '@/views/works/dataVisualization/DataVisualizationProj.vue'
+import KipuQuantumHubProj from '@/views/works/kipuQuantumHub/KipuQuantumHubProj.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
@@ -12,6 +13,10 @@ const router = createRouter({
     {
       path: '/works/data-visualization-case-study',
       component: DataVisualizationProj,
+    },
+    {
+      path: '/works/Kipu-Quantum-Hub',
+      component: KipuQuantumHubProj,
     },
   ],
 

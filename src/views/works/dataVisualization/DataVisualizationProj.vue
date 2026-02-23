@@ -215,7 +215,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
           the user.<br>
           For instance, we can add the total sample count and the most desirable sample information on top, so the user
           has easy access to it at all times, even if they have scrolled down in the list.<br>
-          Additionally, we can add a filering logic and a search bar, so the user can access specific samples or
+          Additionally, we can add a filtering logic and a search bar, so the user can access specific samples or
           probability intervals more easily. <br>
           The sample names could also display additional context related information on hover or if clicked.
         </p>

@@ -15,7 +15,9 @@ import SelectedWork from './components/SelectedWork.vue';
     </div>
 
     <div>
-      <Button class="cta-btn">View Selected Work <i-mdi-chevron-right /></Button>
+      <RouterLink :to="{ path: '/', hash: '#selected-work' }">
+        <Button class="cta-btn">View Selected Work <i-mdi-chevron-right /></Button>
+      </RouterLink>
     </div>
   </div>
 
