@@ -32,7 +32,7 @@
         </p>
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img src="@/assets/images/KQH/001.jpg" alt="Sample chart" class="image" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             Kipu Quantum Hub marketplace page as of December 2025
           </p>
         </div>
@@ -51,9 +51,22 @@
           Challenges & Goals
         </h2>
         <p>
-          Creating an easy to navigate user-friendly interface for a complex platform with a wide variety of features
-          and services, while maintaining a consistent and appealing visual design that reflects the brand identity
-          of Kipu Quantum GmbH, implementing new features, and accounting for future scalability.<br>
+        <ul>
+          <li>
+            Creating an easy to navigate user-friendly interface for a complex platform with a wide variety of features
+            and services.
+          </li>
+          <li>
+            maintaining a consistent and appealing visual design that reflects the brand identity
+            of Kipu Quantum GmbH.
+          </li>
+          <li>
+            Implementing new features.
+          </li>
+          <li>
+            Accounting for future scalability.
+          </li>
+        </ul>
         </p>
       </div>
     </div>
@@ -66,9 +79,85 @@
           Initial interface upgrade (rebranding)
         </h4>
         <p>
-          The first major stage was upgrading the initial user interface to reflect Kipu Quantum's brand identity. This
+          The initial stage of the project was upgrading the user interface to reflect Kipu Quantum's brand
+          identity. This
           included creating a new logo, updating the color scheme and typography.
         </p>
+        <div class="d-flex flex-column flex-lg-row gap-2">
+          <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
+            <img src="@/assets/images/KQH/002.jpg" alt="Sample chart" class="image-s" />
+            <p class="mt-3 caption">
+              The pre-existing interface
+            </p>
+          </div>
+          <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
+            <img src="@/assets/images/KQH/003.jpg" alt="Sample chart" class="image-s" />
+            <p class="mt-3 caption">
+              Interface after initial upgrade and rebranding
+            </p>
+          </div>
+        </div>
+
+        <h4 class="font-w-bold">
+          Improving the user experience
+        </h4>
+        <p>
+          At the time, no standard industry pracitce has been established for quantum computing
+          platforms, and the field is still in its early stages. This meant decisions had to be driven by user needs,
+          foundational UX research, rapid prototyping, and user validation rather than relying on standard industry
+          heuristics.
+          This stage involved improving the overall user experience by improving navigation and information architecture
+          across the platform.
+        </p>
+        <p>
+          Key achievements include:
+        </p>
+        <ul>
+          <li>
+            Deprecated or obsolete pages and features were removed.
+          </li>
+          <li>
+            Overall platform navigation was improved by keeping hierarchy and categorization in mind. All main
+            navigation was moved to the sidebar, and in general, separated into an explore section and a workspace. The
+            explore section includes "public features" of the platform, namely the marketplace and accessible quantum
+            backends, while the workspace includes all features related to the user's account and projects.
+          </li>
+          <li>
+            A clean and consistent design system was implemented across the platform, with a focus on usability and
+            accessibility, while considering Kipu Quantum's brand identity and tone.
+          </li>
+          <li>
+            A multi-tab system was implemented for marketplace services to allow users to easily access all relevant
+            information and features related to a service without having to navigate a long and overwhelming page.
+          </li>
+          <li>
+            Integration of a "quantum assistant" agent that can assist users with various tasks across the platform,
+            and quantum computing in general, accounting for multiple modes for different optimization and reasoning
+            capabilities.
+          </li>
+        </ul>
+
+        <div class="d-flex flex-column flex-lg-row gap-2">
+          <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
+            <img src="@/assets/images/KQH/004.jpg" alt="Sample chart" class="image-s" />
+            <p class="mt-3 caption">
+              The "Quantum Backends" page.
+            </p>
+          </div>
+          <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
+            <img src="@/assets/images/KQH/005.jpg" alt="Sample chart" class="image-s" />
+            <p class="mt-3 caption">
+              A quantum service accessible through the marketplace.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
+          <img src="@/assets/images/KQH/006.jpg" alt="Sample chart" class="image-s" />
+          <p class="mt-3 caption">
+            The "Quantum Assistant".
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -95,6 +184,7 @@
   border-radius: 20px;
   backdrop-filter: blur(3px);
   border: 1px solid rgba(#666, 0.1);
+  width: 100% !important;
   max-width: 1200px;
   padding: 30px;
 
@@ -146,6 +236,14 @@ li {
   @media (max-width: 650px) {
 
     max-width: 350px;
+  }
+}
+
+.caption {
+  font-size: 16px;
+
+  @media (max-width: 650px) {
+    font-size: 14px;
   }
 }
 </style>

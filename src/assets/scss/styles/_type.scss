@@ -39,3 +39,12 @@ p {
     font-size: 16px !important;
   }
 }
+
+li {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+
+  @media (max-width: 650px) {
+    font-size: 16px !important;
+  }
+}

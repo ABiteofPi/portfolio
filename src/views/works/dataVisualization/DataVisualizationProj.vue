@@ -29,7 +29,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
         </p>
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img :src="RawOutputChart" alt="Sample chart" class="image" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             This is a simple example on how this information is often presented.
           </p>
         </div>
@@ -87,7 +87,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
         </p>
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img :src="RawOutputChart" alt="Sample chart" class="image" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             The original chart
           </p>
         </div>
@@ -104,7 +104,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img src="@/assets/images/datavis/001.png" alt="Sample chart" class="image" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             A smaller sample of the original chart
           </p>
         </div>
@@ -120,7 +120,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img src="@/assets/images/datavis/002.png" alt="Sample chart" class="image" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             Horizontal bar chart
           </p>
         </div>
@@ -138,7 +138,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img src="@/assets/images/datavis/003.png" alt="Sample chart" class="image" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             Horizontal bar chart with improved label and text distribution
           </p>
         </div>
@@ -156,13 +156,13 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
         <div class="d-flex flex-column flex-md-row gap-2">
           <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
             <img src="@/assets/images/datavis/004.png" alt="Sample chart" class="image-s" />
-            <p class="mt-3">
+            <p class="mt-3 caption">
               Chart sorted based on desirability (probability)
             </p>
           </div>
           <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
             <img src="@/assets/images/datavis/005.png" alt="Sample chart" class="image-s" />
-            <p class="mt-3">
+            <p class="mt-3 caption">
               How the chart would look given negative probability values.
             </p>
           </div>
@@ -180,7 +180,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img src="@/assets/images/datavis/006.png" alt="Sample chart" class="image-s" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             First wireframe
           </p>
         </div>
@@ -197,7 +197,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img src="@/assets/images/datavis/007.png" alt="Sample chart" class="image-s" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             Final wireframe
           </p>
         </div>
@@ -222,13 +222,13 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
         <div class="d-flex flex-column flex-md-row gap-2">
           <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
             <img src="@/assets/images/datavis/008.png" alt="Sample chart" class="image-s" />
-            <p class="mt-3">
+            <p class="mt-3 caption">
               Final UI in light mode
             </p>
           </div>
           <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
             <img src="@/assets/images/datavis/009.png" alt="Sample chart" class="image-s" />
-            <p class="mt-3">
+            <p class="mt-3 caption">
               Final UI in dark mode
             </p>
           </div>
@@ -246,13 +246,13 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img src="@/assets/images/datavis/010.png" alt="Sample chart" class="image-l" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             How users with colorblindness would see the UI (Light mode)
           </p>
         </div>
         <div class="d-flex flex-column w-100 align-items-center mt-4 mb-3">
           <img src="@/assets/images/datavis/011.png" alt="Sample chart" class="image-l" />
-          <p class="mt-3">
+          <p class="mt-3 caption">
             How users with colorblindness would see the UI (Dark mode)
           </p>
         </div>
@@ -289,6 +289,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
   backdrop-filter: blur(3px);
   border: 1px solid rgba(#666, 0.1);
   max-width: 1200px;
+  width: 100% !important;
   padding: 30px;
 
   @media (max-width: 650px) {
@@ -335,6 +336,14 @@ li {
   @media (max-width: 650px) {
 
     max-width: 350px;
+  }
+}
+
+.caption {
+  font-size: 16px;
+
+  @media (max-width: 650px) {
+    font-size: 14px;
   }
 }
 </style>
