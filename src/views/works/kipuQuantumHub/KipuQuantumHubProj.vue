@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="d-flex flex-column align-items-center px-5">
+  <div class="d-flex flex-column align-items-center page">
     <div class="text-center py-5 mt-3 mb-3">
       <h1 class="title font-w-bold">
         Kipu Quantum Hub
@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div class="d-flex flex-column gap-4 header mb-4 p-5">
+    <div class="d-flex flex-column gap-4 header mb-4">
       <div>
         <h2 class="font-w-bold text-muted">
           Overview
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <div class="d-flex flex-column gap-4 header mb-4 p-5">
+    <div class="d-flex flex-column gap-4 header mb-4">
       <div>
         <h2 class="font-w-bold text-muted">
           Challenges & Goals
@@ -60,7 +60,7 @@
 
     <h1 class="font-w-bold mb-4">Solution</h1>
 
-    <div class="d-flex flex-column gap-4 header mb-4 p-5">
+    <div class="d-flex flex-column gap-4 header mb-4">
       <div>
         <h4 class="font-w-bold">
           Initial interface upgrade (rebranding)
@@ -77,9 +77,18 @@
 <style scoped lang="scss">
 @import '@/assets/scss/main.scss';
 
+.page {
+  padding: 30px;
+
+  @media (max-width: 650px) {
+    padding: 15px;
+  }
+}
+
 .title {
   font-size: calc(1rem + 4vw);
 }
+
 
 .header {
   background-color: rgba(#fff, 0.25);
@@ -87,6 +96,11 @@
   backdrop-filter: blur(3px);
   border: 1px solid rgba(#666, 0.1);
   max-width: 1200px;
+  padding: 30px;
+
+  @media (max-width: 650px) {
+    padding: 20px;
+  }
 }
 
 p {

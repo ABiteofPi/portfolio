@@ -3,7 +3,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 </script>
 
 <template>
-  <div class="d-flex flex-column align-items-center px-5">
+  <div class="d-flex flex-column align-items-center page">
     <div class="text-center py-5 mt-3 mb-4">
       <h1 class="title font-w-bold">
         Data visualization case study
@@ -15,7 +15,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
       </h4>
     </div>
 
-    <div class="d-flex flex-column gap-4 header mb-4 p-5">
+    <div class="d-flex flex-column gap-4 header mb-4">
       <div>
         <h2 class="font-w-bold text-muted">
           Problem statement
@@ -54,7 +54,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 
     <h1 class="font-w-bold mb-4">Solution</h1>
 
-    <div class="d-flex flex-column gap-4 header mb-5 p-5">
+    <div class="d-flex flex-column gap-4 header mb-5">
       <div>
         <h2 class="font-w-bold text-muted">
           Information
@@ -206,7 +206,7 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 
     <h1 class="font-w-bold mb-4">Finalized UI</h1>
 
-    <div class="d-flex flex-column gap-4 header mb-4 p-5">
+    <div class="d-flex flex-column gap-4 header mb-4">
       <div>
 
 
@@ -266,6 +266,14 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
 <style scoped lang="scss">
 @import '@/assets/scss/main.scss';
 
+.page {
+  padding: 30px;
+
+  @media (max-width: 650px) {
+    padding: 15px;
+  }
+}
+
 .title {
   font-size: calc(1rem + 4vw);
 }
@@ -281,6 +289,11 @@ import RawOutputChart from '@/assets/images/datavis/raw-output-chart.png';
   backdrop-filter: blur(3px);
   border: 1px solid rgba(#666, 0.1);
   max-width: 1200px;
+  padding: 30px;
+
+  @media (max-width: 650px) {
+    padding: 20px;
+  }
 }
 
 p {

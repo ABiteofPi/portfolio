@@ -3,7 +3,7 @@ import Logo from "@/assets/images/logo.svg";
 </script>
 
 <template>
-  <div class="px-5 py-4">
+  <div class="navbar-container">
     <div class="d-flex flex-row justify-content-between align-items-center w-100">
       <a href="/">
         <img :src="Logo" alt="Logo" class="logo" />
@@ -25,6 +25,14 @@ import Logo from "@/assets/images/logo.svg";
 </template>
 
 <style lang="scss" scoped>
+.navbar-container {
+  padding: 15px 45px;
+
+  @media (max-width: 580px) {
+    padding: 10px 20px !important;
+  }
+}
+
 .navbar-link {
   font-size: 20px;
 }
