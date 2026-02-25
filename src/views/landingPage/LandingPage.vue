@@ -39,8 +39,7 @@ import SelectedWork from './components/SelectedWork.vue';
   margin-top: 100px;
 
   @media screen and (max-width: 768px) {
-    margin-top: 0;
-    height: auto;
+    height: calc(100vh - 200px);
   }
 }
 
